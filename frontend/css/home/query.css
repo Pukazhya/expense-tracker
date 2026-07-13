@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 80px;
+
+    background:white;
+}
+
+.logo h2{
+    color:#00a86b;
+}
+
+ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+}
+
+.login-btn{
+    padding:10px 25px;
+    border:none;
+    background:#00a86b;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Query Section */
+
+.query-section{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px;
+}
+
+.query-box{
+
+    width:700px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.query-box h1{
+
+    text-align:center;
+
+    margin-bottom:15px;
+}
+
+.query-box p{
+
+    text-align:center;
+
+    color:gray;
+
+    margin-bottom:30px;
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+input,
+select,
+textarea{
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+form button{
+
+    padding:15px;
+
+    border:none;
+
+    background:#00a86b;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+form button:hover{
+
+    background:#008f5a;
+}
