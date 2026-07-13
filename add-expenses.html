@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Expenses - EXPENSIO</title>
+  <link rel="icon" href="images/icon.jpg">
+  <link rel="stylesheet" href="css/add-expenses.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><h2>EXPENSIO</h2><ul><li><a href="dashboard.html">Overview</a></li><li class="active"><a href="add-expenses.html">Add expense</a></li><li><a href="view-expenses.html">All expenses</a></li><li><a href="reports.html">Reports</a></li><li><a href="profile.html">Profile</a></li></ul></aside>
+    <main class="app-main">
+      <header class="page-heading"><div><h1>Add expenses</h1><p class="subtitle">Add every transaction from the day, then save them together.</p></div></header>
+      <section class="panel batch-panel">
+        <form id="expense-batch-form">
+          <div class="table-wrap expense-entry-wrap">
+            <table class="expense-entry-table">
+              <thead><tr><th class="add-column"><button id="add-row" type="button" class="add-row-btn" aria-label="Add another expense row">+</button></th><th>Date</th><th>Category</th><th>Amount (₹)</th><th>Description</th><th class="remove-column"><span class="sr-only">Remove</span></th></tr></thead>
+              <tbody id="expense-rows"></tbody>
+            </table>
+          </div>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+          <div class="form-actions"><button type="submit" class="save-batch-btn">Save all expenses</button><a class="back-btn" href="dashboard.html">← Back to overview</a></div>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/add-expenses.js"></script>
+</body>
+</html>
