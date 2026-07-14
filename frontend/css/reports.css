@@ -1,0 +1,8 @@
+@import url("base.css");
+@import url("app.css");
+
+.chart { min-width:500px; }
+.bar { min-height:4px; transition:height .3s ease; }
+.bar-value { color:var(--ink); font-size:.78rem; font-weight:700; }
+.bar-label { overflow:hidden; max-width:100%; text-overflow:ellipsis; white-space:nowrap; }
+@media (max-width:600px) { .chart { min-width:420px; } }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EXPENSIO</title>
+
+    
+    <link rel="icon" href="images/icon.jpg">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+<body>
+    
+    <a class="Home" href="index.html">Home</a>
+    
+
+    <div class="container">
+
+        <!-- Left Side -->
+
+        <div class="left">
+
+            <h2 class="logo">EXPENSIO</h2>
+
+            <h1>
+                Welcome to <br>
+                <span>EXPENSIO</span>
+            </h1>
+
+            <p>
+                Track your expenses, manage your budget and
+                achieve your financial goals with ease.
+            </p>
+
+            <img src="images/pic5.jpg"
+                 alt="Expense Tracker">
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="right">
+
+            <h1>Login</h1>
+
+            <p class="welcome">
+                Welcome back! Please login to continue.
+            </p>
+
+            <form id="login-form">
+
+    <label>Email</label>
+
+    <input id="email"
+        type="email"
+        placeholder="Enter your email"
+        required>
+
+    <label>Password</label>
+
+    <input id="password"
+        type="password"
+        placeholder="Enter your password"
+        required>
+
+    <button
+        type="submit"
+        class="login-btn">
+
+        Login
+
+    </button>
+
+</form>
+            <p class="auth-switch">New here? <a href="register.html">Create an account</a></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
