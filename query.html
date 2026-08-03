@@ -30,63 +30,76 @@
 
     <!-- Query Form -->
 
-    <section class="query-section">
+    <section class="page-container">
 
-        <div class="query-box">
+        <div class="hero-card hero-query">
+            <div class="hero-copy">
+                <span class="eyebrow">Need help?</span>
+                <h2>Send your query to the EXPENSIO support team.</h2>
+                <p>Use this page to ask about bugs, feature ideas, or how to use the app more effectively. Your request helps us improve the experience for everyone.</p>
+            </div>
+        </div>
 
-            <h1>Submit Your Query</h1>
-
-            <p>
-                Have a question, issue, or suggestion?
-                Let us know and we'll get back to you.
-            </p>
-
-            <form>
-
-                <input
-                    type="text"
-                    placeholder="Enter your name"
-                    required>
-
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                    required>
-
+        <div class="form-card">
+            <div class="section-heading">
+                <span>Contact form</span>
+                <h2>Submit a quick request</h2>
+            </div>
+            <form class="support-form">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
                 <select required>
-                    <option value="">
-                        Select Query Type
-                    </option>
-
-                    <option>
-                        Technical Issue
-                    </option>
-
-                    <option>
-                        Feature Request
-                    </option>
-
-                    <option>
-                        Feedback
-                    </option>
-
-                    <option>
-                        Other
-                    </option>
+                    <option value="">Select a request type</option>
+                    <option>Technical Issue</option>
+                    <option>Feature Request</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
                 </select>
-
-                <textarea
-                    rows="6"
-                    placeholder="Describe your query..."
-                    required>
-                </textarea>
-
-                <button type="submit">
-                    Submit Query
-                </button>
-
+                <textarea rows="6" placeholder="Describe your query..." required></textarea>
+                <button type="submit">Submit Query</button>
             </form>
+        </div>
 
+        <div class="section-card">
+            <div class="section-heading">
+                <span>FAQ</span>
+                <h2>Common questions before you submit</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item"><summary>How long does a response take?</summary><p>We aim to reply within 24-48 hours, depending on message volume and the type of request.</p></details>
+                <details class="faq-item"><summary>Can I request a new feature?</summary><p>Yes. Feature ideas are always welcome and help shape future improvements.</p></details>
+                <details class="faq-item"><summary>Is this form secure?</summary><p>Yes. Your information is only used to respond to your query and is not shared publicly.</p></details>
+                <details class="faq-item"><summary>What should I include?</summary><p>Include the page or feature you were using, a brief description of the issue, and the result you expect.</p></details>
+            </div>
+        </div>
+
+        <div class="section-card support-section">
+            <div class="section-heading">
+                <span>Support categories</span>
+                <h2>Choose the right topic for your question</h2>
+            </div>
+            <div class="cards-grid grid-2">
+                <div class="info-card"><h3>Technical Issue</h3><p>Report bugs, loading issues, or unexpected behavior in the app.</p></div>
+                <div class="info-card"><h3>Feature Request</h3><p>Share ideas for charts, categories, reports, or improvements.</p></div>
+                <div class="info-card"><h3>Feedback</h3><p>Tell us how the design or workflow feels and what could be more intuitive.</p></div>
+                <div class="info-card"><h3>General Help</h3><p>Ask for guidance on how to use pages, add expenses, or manage categories.</p></div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="section-heading">
+                <span>Contact information</span>
+                <h2>Other ways to reach us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card"><h3>Email</h3><p>support@expensio.com</p><a href="mailto:support@expensio.com">Send an email</a></div>
+                <div class="contact-card"><h3>Phone</h3><p>+91 98765 43210</p><a href="tel:+919876543210">Call us</a></div>
+                <div class="contact-card"><h3>Location</h3><p>Coimbatore, Tamil Nadu</p><a href="https://maps.google.com" target="_blank">View on map</a></div>
+            </div>
+        </div>
+
+        <div class="footer-card page-footer">
+            <p>EXPENSIO support is here to help you get the most from your expense tracking. Reach out with any question and we’ll get back to you soon.</p>
         </div>
 
     </section>

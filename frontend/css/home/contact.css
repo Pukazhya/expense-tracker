@@ -176,3 +176,82 @@ form button:hover{
 
     background:#008f5a;
 }
+
+.contact-container-small {
+    max-width:1060px;
+    margin:auto;
+}
+
+.page-banner {
+    margin:40px auto 24px;
+    max-width:1060px;
+    background:#e8faf0;
+    border:1px solid rgba(0,168,107,.15);
+    border-radius:18px;
+    padding:28px 32px;
+}
+
+.page-banner h3 {
+    margin:0 0 16px;
+    color:#0f4627;
+    font-size:1.45rem;
+}
+
+.page-list {
+    list-style:disc inside;
+    margin:0;
+    padding:0;
+    color:#444;
+    line-height:1.8;
+}
+
+.page-list li {
+    margin-bottom:10px;
+}
+
+.info-grid {
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:20px;
+    max-width:1060px;
+    margin:auto;
+}
+
+@media (max-width:980px) {
+    .contact-container {
+        flex-direction:column;
+    }
+
+    .left,
+    .right {
+        width:100%;
+        padding:28px;
+    }
+
+    .info-grid {
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width:640px) {
+    nav {
+        flex-direction:column;
+        align-items:flex-start;
+        padding:18px 24px;
+    }
+
+    ul {
+        flex-wrap:wrap;
+        gap:18px;
+        margin-top:18px;
+    }
+
+    .contact-section {
+        padding:30px 18px;
+    }
+
+    .contact-container {
+        margin:0;
+        box-shadow:none;
+    }
+}
